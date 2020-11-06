@@ -37,6 +37,10 @@ const ordersRoute = require('./api/routes/orders');
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+/**
+ * This is used to serve static files
+ */
+// app.use('/uploads', express.static('uploads'));
 
 /**
  * Now we want to tell the client that yeah you can have access
