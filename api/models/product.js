@@ -12,6 +12,10 @@ const productSchema = mongoose.Schema({
 		type: Number,
 		required: [true, 'price is a required field'],
 	},
+	productImage: {
+		type: String,
+		required: true,
+	},
 });
 
 /**

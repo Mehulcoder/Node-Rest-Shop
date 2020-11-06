@@ -38,9 +38,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 /**
- * This is used to serve static files
+ * This is used to serve static files.
+ * Here the uploads folder files are served
  */
-// app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static('uploads'));
 
 /**
  * Now we want to tell the client that yeah you can have access
